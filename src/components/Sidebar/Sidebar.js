@@ -2,13 +2,13 @@ import SideMenuItem from './SideMenuItem';
 
 const Sidebar = () => {
     const menuItems = [
-        { title: 'Dashboard', icon: <i class="fa-solid fa-chart-line"></i> },
-        { title: 'My Tickets', icon: <i class="fa-solid fa-ticket"></i> },
-        { title: 'My Profile', icon: <i class="fa-regular fa-user"></i> },
-        { title: 'My Users', icon: <i class="fa-solid fa-users"></i> },
-        { title: 'My Assets', icon: <i class="fa-solid fa-desktop"></i> },
-        { title: 'My Tickets Type', icon: <i class="fa-regular fa-clipboard"></i> },
-        { title: 'Tickets Queue', icon: <i class="fa-solid fa-file"></i> },
+        { title: 'Dashboard', icon: <i class="fa-solid fa-chart-line"></i>, link: '/profile' },
+        { title: 'My Tickets', icon: <i class="fa-solid fa-ticket"></i>, link: '/profile' },
+        { title: 'My Profile', icon: <i class="fa-regular fa-user"></i>, link: '/profile' },
+        { title: 'My Users', icon: <i class="fa-solid fa-users"></i>, link: '/profile' },
+        { title: 'My Assets', icon: <i class="fa-solid fa-desktop"></i>, link: '/profile' },
+        { title: 'My Tickets Type', icon: <i class="fa-regular fa-clipboard"></i>, link: '/' },
+        { title: 'Tickets Queue', icon: <i class="fa-solid fa-file"></i>, link: '/profile' },
     ];
     return (
         <div className='w-64 bg-blue-950 min-h-screen h-full absolute'>

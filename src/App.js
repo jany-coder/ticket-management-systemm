@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
 import Main from './layouts/Main';
 import TicketsType from './components/TicketsType/TicketsType';
+import Profile from './components/Profile/Profile';
 
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
         {
           path: '/',
           element: <TicketsType></TicketsType>
+        },
+        {
+          path: '/profile',
+          element: <Profile></Profile>
         },
       ]
     }
